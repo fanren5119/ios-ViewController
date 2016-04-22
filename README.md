@@ -13,6 +13,7 @@
 ##4.ViewController的生命周期
         ViewController的生命周期流程图如下：
 ![ViewController的生命周期]()
+
         当一个视图控制器被创建，并在屏幕上显示的时候，执行顺序为：
         ① alloc：创建对象，分配空间；
         ② init：初始化对象，初始化数据；
@@ -31,6 +32,7 @@
 ##5.view的加载过程
         view的加载流程如下：
 ![view的加载流程]()
+
         viewController对view的加载过程：
         ① 判断子类是否重写了loadView，如果有直接调用，之后调用viewDidLoad完成对
     view的加载；
@@ -54,6 +56,7 @@
 ##6.view的卸载过程
         view的卸载流程图如下
 ![view的卸载]()
+
         ① 系统发出警告或者ViewController本身调用导致didRecieveMemoryWarning被调用
         ② 调用viewWillUnload之后释放view；
         ③ 调用viewDidUnload；
