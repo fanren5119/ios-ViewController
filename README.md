@@ -60,3 +60,12 @@
         ① 系统发出警告或者ViewController本身调用导致didRecieveMemoryWarning被调用
         ② 调用viewWillUnload之后释放view；
         ③ 调用viewDidUnload；
+##7.视图切换
+        ios开发中常见的视图切换有三种：
+        ① UITabBarController：以平行的方式管理视图，各个视图之间往往关系并不大，每个
+    加入到UITabBarController的视图都会进行初始化，即使当前不显示在界面上，相对比较占
+    用内存；
+        ② UINavigationController：以栈的形式管理视图，各个视图的切换就是压榨和出栈操
+    作，出栈后的视图会立即销毁；
+        ③ UIModalController：以模态窗口的形式管理视图，当前视图关闭其他视图上的内容
+    无法操作。
