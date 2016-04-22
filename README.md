@@ -1,0 +1,2 @@
+# ios-ViewController
+UIViewController作为中管理视图的控制器，是Objective-C中一块重要的内容，而他的生命周期也是我们必须掌握的东西
