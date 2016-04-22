@@ -12,7 +12,7 @@
         UIViewController的创建方式有三种，stroyboard，xib，代码方式；
 ##4.ViewController的生命周期
         ViewController的生命周期流程图如下：
-![ViewController的生命周期]()
+![ViewController的生命周期](viewController.png)
 
         当一个视图控制器被创建，并在屏幕上显示的时候，执行顺序为：
         ① alloc：创建对象，分配空间；
@@ -31,7 +31,7 @@
     会被再次调用，一遍再次构造视图；
 ##5.view的加载过程
         view的加载流程如下：
-![view的加载流程]()
+![view的加载流程](loadView.png)
 
         viewController对view的加载过程：
         ① 判断子类是否重写了loadView，如果有直接调用，之后调用viewDidLoad完成对
@@ -55,7 +55,7 @@
             ③ 创建xib的时候，要注意xib文件的名字。
 ##6.view的卸载过程
         view的卸载流程图如下
-![view的卸载]()
+![view的卸载](unloadView.png)
 
         ① 系统发出警告或者ViewController本身调用导致didRecieveMemoryWarning被调用
         ② 调用viewWillUnload之后释放view；
