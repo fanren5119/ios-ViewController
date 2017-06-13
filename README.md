@@ -1,5 +1,5 @@
-#ios ViewController
-##1.简介
+# ios ViewController
+## 1.简介
         ViewController是iOS应用程序的重要部分，是管理应用中多个视图的工具，也是应用
     数据和视图之间的重要桥梁；
 ##2.分类
@@ -8,9 +8,9 @@
     容，并与用户交互，如UIViewController，UITableViewController；
         ② 用户控制和显示其他ViewController的ViewController，这种ViewController一般
     都是多个ViewController的容器。如UINavigationController，UITabBarController；
-##3.ViewController的使用
+## 3.ViewController的使用
         UIViewController的创建方式有三种，stroyboard，xib，代码方式；
-##4.ViewController的生命周期
+## 4.ViewController的生命周期
         ViewController的生命周期流程图如下：
 ![ViewController的生命周期](viewController.png)
 
@@ -29,7 +29,7 @@
     图的话，viewDidUnload将会被执行，本视图的所有子视图将会被销毁，以释放内存，此时
     开发者需要手动对创建的对象释放内存；因为当这个视图再次显示到屏幕上时，viewDidLoad
     会被再次调用，一遍再次构造视图；
-##5.view的加载过程
+## 5.view的加载过程
         view的加载流程如下：
 ![view的加载流程](loadView.png)
 
@@ -53,14 +53,14 @@
             ② 控制器的view是延迟加载的，即用到的时候才加载，也就是调用viewDidLoad
         方法。
             ③ 创建xib的时候，要注意xib文件的名字。
-##6.view的卸载过程
+## 6.view的卸载过程
         view的卸载流程图如下
 ![view的卸载](unloadView.png)
 
         ① 系统发出警告或者ViewController本身调用导致didRecieveMemoryWarning被调用
         ② 调用viewWillUnload之后释放view；
         ③ 调用viewDidUnload；
-##7.视图切换
+## 7.视图切换
         ios开发中常见的视图切换有三种：
         ① UITabBarController：以平行的方式管理视图，各个视图之间往往关系并不大，每个
     加入到UITabBarController的视图都会进行初始化，即使当前不显示在界面上，相对比较占
