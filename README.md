@@ -2,7 +2,7 @@
 ## 1.简介
         ViewController是iOS应用程序的重要部分，是管理应用中多个视图的工具，也是应用
     数据和视图之间的重要桥梁；
-##2.分类
+## 2.分类
         按照结构，可以对iOS所有的ViewController分为两类：
         ① 主要用于展示内容的ViewController，这种ViewController主要用于为用户展示内
     容，并与用户交互，如UIViewController，UITableViewController；
